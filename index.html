@@ -9,51 +9,75 @@
 
   <body>
     <header class="header">
-      <nav>
-        <a class="header-link" href="index.html">Strona główna</a>
-        <a class="header-link" href="nauka-html.html">Nauka HTML</a>
-        <a class="header-link" href="nauka-css.html">Nauka CSS</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
       </nav>
     </header>
-    <main>
-      <header id="top">
-        <h1 id="name">Kampik - Strona domowa</h1>
+    <main class="main">
+      <header class="main__header" id="top">
+        <h1 class="main__heading main__heading--js" id="name">
+          Kampik - Strona domowa
+        </h1>
       </header>
 
-      <section>
-        <h2>Poniżej moja fotka</h2>
-        <img src="kampiKing.jpg" alt="elegancki kotek" width="350px" />
-        
-        <h3>To jest nagłówek trzeciego stopnia</h3>
-        <p>
+      <section class="about">
+        <h2 class="about__heading">Poniżej moja fotka</h2>
+        <img
+          class="about__picture"
+          src="kampiKing.jpg"
+          alt="elegancki kotek"
+          width="350px"
+        />
+
+        <p class="about__description">
           Donec bibendum diam nibh, ac fringilla nulla porttitor nec. Proin
-          maximus elit scelerisque elementum scelerisque. Phasellus viverra
+          maximus elit scelerisque elementum scelerisque. Phasellus viverra<a
+            class="about__link"
+            href="
+          https://cotenfrontend.pl"
+            >WTF</a
+          ><br />
           sollicitudin sapien. Maecenas egestas ligula nisi, sit amet auctor
-          purus ornare sit amet. 
+          purus ornare sit amet.
         </p>
         <h3>To jest nagłówek trzeciego stopnia</h3>
         <p>
           Sed et semper elit, ac convallis lorem. Aenean ut feugiat tellus,
           placerat convallis nisl. Etiam tempor convallis pellentesque. Aliquam
           malesuada mattis leo ut accumsan. In purus risus, sodales id ultrices
-          vel, maximus vel sapien. Nam porta risus laoreet nisl pulvinar, sed
-          pellentesque
+          vel, maximus vel sapien.
+          <a
+            class="about__link"
+            href="
+          #notatki"
+            >Przejdź do notatek</a
+          >
+          Nam porta risus laoreet nisl pulvinar, sed pellentesque
         </p>
       </section>
-      <section id="notatki">
-        <h2 class="secondary-heading">Poniżej jakieś treści</h2>
-        <article>
-          <h3 class="special-header">To jest nagłowek trzeciego poziomu</h3>
-          <p>
+      <section class="notes" id="notatki">
+        <h2 class="notes__heading">Poniżej jakieś treści</h2>
+        <article class="week-summary">
+          <h3 class="week-summary__title">
+            To jest nagłowek trzeciego poziomu
+          </h3>
+          <p class="week-summary__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             porttitor ante vitae neque pellentesque tincidunt. Praesent
             elementum lacus accumsan magna ullamcorper, ac condimentum nisl
             sodales. Sed elementum ligula vitae justo pellentesque, eget congue
             est tristique. Maecenas ultricies vel erat ut pulvinar.
           </p>
+          <p class="week-summary__description--js"></p>
         </article>
-        <article>
-          <h3 class="special-header">To jest nagłowek trzeciego poziomu</h3>
+        <article class="week-summary week-summary--special">
+          <h3 class="week-summary__title">
+            To jest nagłowek trzeciego poziomu
+          </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             porttitor ante vitae neque pellentesque tincidunt. Praesent
@@ -63,8 +87,10 @@
           </p>
         </article>
 
-        <article>
-          <h3 class="special-header">To jest nagłowek trzeciego poziomu</h3>
+        <article class="week-summary">
+          <h3 class="week-summary__title">
+            To jest nagłowek trzeciego poziomu
+          </h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             porttitor ante vitae neque pellentesque tincidunt. Praesent
@@ -75,8 +101,9 @@
         </article>
       </section>
     </main>
-    <footer>
-        Strona domowa <a href="#top">Kampika</a>. Strona stworzona na potrzeby szkolenia WTF: Co ten frontend.
+    <footer class="footer">
+      Strona domowa <a class="footer__link" href="#top">Kampika</a>. Strona stworzona na potrzeby
+      szkolenia WTF: Co ten frontend.
     </footer>
     <script src="main.js"></script>
   </body>
