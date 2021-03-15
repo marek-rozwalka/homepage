@@ -25,14 +25,30 @@ const myResult = calculate(age);
 
 console.log(myResult);
 console.log(age);*/
-/*
-function greet(age, firstName) {
+
+function greetOld(age, firstName) {
     console.log (
         `Witaj Drogi Odwiedzający, nazywam się ${firstName} i mam ${age} lata.`
     );
 }
 
-greet(firstName, age)
+const greet = (age, firstName) => {
+    console.log (
+        `Witaj Drogi Odwiedzający, nazywam się ${firstName} i mam ${age} lata.`
+    );
+}
+function calculateOld(myNumber) {
+    return myNumber*7;
+}
+
+const calculate = (myNumber) => myNumber*7
+
+console.log(calculate(7));
+
+const myResult = calculate(7);
+console.log(myResult)
+/*
+greet(32, 'Maciek');
 */
 function createContent(querySelectorContent, content) {
     const element = document.querySelector(querySelectorContent);
